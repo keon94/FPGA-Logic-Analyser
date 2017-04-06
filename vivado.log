@@ -2,124 +2,20 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Thu Mar 16 12:01:18 2017
-# Process ID: 28604
+# Start of session at: Fri Apr 07 12:41:25 2017
+# Process ID: 7568
 # Current directory: C:/Users/Jay/Dropbox/Senior_Design
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19008 C:\Users\Jay\Dropbox\Senior_Design\Senior_Design.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9628 C:\Users\Jay\Dropbox\Senior_Design\Senior_Design.xpr
 # Log file: C:/Users/Jay/Dropbox/Senior_Design/vivado.log
 # Journal file: C:/Users/Jay/Dropbox/Senior_Design\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/clk_divider.vhd'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
-open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 799.566 ; gain = 108.359
-synth_design -rtl -name rtl_1
-Command: synth_design -rtl -name rtl_1
-Starting synth_design
-Using part: xc7k70tfbv676-1
-Top: logic_analyser
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 848.840 ; gain = 638.852
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'logic_analyser' [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:22]
-	Parameter n_of_inputs bound to: 4 - type: integer 
-	Parameter b_width bound to: 16 - type: integer 
-	Parameter fifo_mem_size bound to: 256 - type: integer 
-INFO: [Synth 8-3491] module 'read_synchroniser' declared at 'C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/read_synchroniser.vhd:10' bound to instance 'u_read_sync' of component 'read_synchroniser' [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'read_synchroniser' [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/read_synchroniser.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'read_synchroniser' (1#1) [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/read_synchroniser.vhd:19]
-	Parameter N bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'clk_generator' declared at 'C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/clk_divider.vhd:6' bound to instance 'u_clk_gen' of component 'clk_generator' [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'clk_generator' [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/clk_divider.vhd:17]
-	Parameter N bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clk_generator' (2#1) [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/clk_divider.vhd:17]
-WARNING: [Synth 8-549] port width mismatch for port 'off_time_factor': port width = 5, actual width = 32 [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:62]
-	Parameter num_of_inputs bound to: 4 - type: integer 
-	Parameter buffer_width bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'input_buffer' declared at 'C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:7' bound to instance 'u_buffer' of component 'Input_Buffer' [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:104]
-INFO: [Synth 8-638] synthesizing module 'input_buffer' [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:25]
-	Parameter num_of_inputs bound to: 4 - type: integer 
-	Parameter buffer_width bound to: 16 - type: integer 
-WARNING: [Synth 8-614] signal 'buffer_en' is read in the process but is not in the sensitivity list [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:37]
-WARNING: [Synth 8-614] signal 'zero_buffer' is read in the process but is not in the sensitivity list [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:37]
-WARNING: [Synth 8-614] signal 'buffer_en' is read in the process but is not in the sensitivity list [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:53]
-INFO: [Synth 8-256] done synthesizing module 'input_buffer' (3#1) [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:25]
-	Parameter mem_size bound to: 256 - type: integer 
-	Parameter mem_width bound to: 64 - type: integer 
-INFO: [Synth 8-3491] module 'FIFO' declared at 'C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:5' bound to instance 'u_fifo' of component 'FIFO' [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:120]
-INFO: [Synth 8-638] synthesizing module 'FIFO' [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:20]
-	Parameter mem_size bound to: 256 - type: integer 
-	Parameter mem_width bound to: 64 - type: integer 
-WARNING: [Synth 8-614] signal 'zero_data' is read in the process but is not in the sensitivity list [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:37]
-WARNING: [Synth 8-614] signal 'fifo_mem' is read in the process but is not in the sensitivity list [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'FIFO' (4#1) [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'logic_analyser' (5#1) [C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:22]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:35 . Memory (MB): peak = 894.148 ; gain = 684.160
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:35 . Memory (MB): peak = 894.148 ; gain = 684.160
----------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7k70tfbv676-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc]
-WARNING: [Vivado 12-584] No ports matched 'hi_muxsel'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:15]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'hi_muxsel'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:16]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'fpga_clk'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:59]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports fpga_clk]'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:59]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-584] No ports matched 'fpga_clk'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:63]
-CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_ports fpga_clk]'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:63]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-584] No ports matched 'divided_clk'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:566]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:566]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[*]'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:574]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:574]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk_sel[0]'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:577]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:577]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk_sel[1]'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:578]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:578]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk_sel[2]'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:579]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:579]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk_sel[3]'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:580]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:580]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'button[*]'. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:581]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc:581]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/Jay/Dropbox/Senior_Design/xem7001.xdc]
-Completed Processing XDC Constraints
-
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:57 ; elapsed = 00:00:48 . Memory (MB): peak = 1211.930 ; gain = 1001.941
-18 Infos, 17 Warnings, 11 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1211.930 ; gain = 402.910
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 16 12:02:41 2017...
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 796.078 ; gain = 113.129
+add_files -norecurse C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO_write_clk_generator.vhd

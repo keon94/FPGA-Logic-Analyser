@@ -2,6 +2,9 @@
 --operation prematurely, thus this unit is necessary.
 ----------------------------------------------------------------------------------
 
+--This unit was intended to make sure that read speeds don't exceed write speeds, for if they do, the FIFO can come to a premature stop. 
+--If such were to happen, this unit would null out the read_en signal if it were on; restoring it after a sufficient amount of time had passed.
+--Currently this unit is disabled, and does nothing
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

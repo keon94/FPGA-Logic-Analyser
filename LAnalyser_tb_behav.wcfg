@@ -11,14 +11,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="557579844fs"></ZoomEndTime>
-      <Cursor1Time time="147489000fs"></Cursor1Time>
+      <ZoomEndTime time="574273852fs"></ZoomEndTime>
+      <Cursor1Time time="84305000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="204"></NameColumnWidth>
-      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="23" />
+   <WVObjectSize size="19" />
    <wvobject fp_name="/logic_analyser_tb/uut/u_clk_gen/fpga_clk" type="logic">
       <obj_property name="ElementShortName">fpga_clk</obj_property>
       <obj_property name="ObjectShortName">fpga_clk</obj_property>
@@ -36,15 +36,21 @@
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
    <wvobject fp_name="/logic_analyser_tb/uut/u_buffer/data_in" type="array">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">data_in[1:0]</obj_property>
       <obj_property name="ObjectShortName">data_in[1:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">data_in (to BUF)[1:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/logic_analyser_tb/uut/u_buffer/data_out_temp" type="array">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">data_out_temp[7:0]</obj_property>
       <obj_property name="ObjectShortName">data_out_temp[7:0]</obj_property>
       <obj_property name="label">data_out_temp (from BUF)[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_analyser_tb/uut/u_buffer/buffer_en" type="logic">
+      <obj_property name="ElementShortName">buffer_en</obj_property>
+      <obj_property name="ObjectShortName">buffer_en</obj_property>
    </wvobject>
    <wvobject fp_name="/logic_analyser_tb/uut/u_buffer/buffer_memory" type="array">
       <obj_property name="ElementShortName">buffer_memory[0:3][1:0]</obj_property>
@@ -73,7 +79,10 @@
    <wvobject fp_name="/logic_analyser_tb/uut/u_fifo/fifo_mem" type="array">
       <obj_property name="ElementShortName">fifo_mem[0:7][7:0]</obj_property>
       <obj_property name="ObjectShortName">fifo_mem[0:7][7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/logic_analyser_tb/fifo_remaining_data" type="other">
+      <obj_property name="ElementShortName">fifo_remaining_data</obj_property>
+      <obj_property name="ObjectShortName">fifo_remaining_data</obj_property>
    </wvobject>
    <wvobject fp_name="/logic_analyser_tb/uut/u_fifo/effective_write_clk" type="logic">
       <obj_property name="ElementShortName">effective_write_clk</obj_property>
@@ -94,29 +103,5 @@
    <wvobject fp_name="/logic_analyser_tb/uut/u_buffer/counter" type="other">
       <obj_property name="ElementShortName">counter</obj_property>
       <obj_property name="ObjectShortName">counter</obj_property>
-   </wvobject>
-   <wvobject fp_name="/logic_analyser_tb/uut/u_buffer/counter_max" type="other">
-      <obj_property name="ElementShortName">counter_max</obj_property>
-      <obj_property name="ObjectShortName">counter_max</obj_property>
-   </wvobject>
-   <wvobject fp_name="/logic_analyser_tb/uut/u_buffer/buffer_en" type="logic">
-      <obj_property name="ElementShortName">buffer_en</obj_property>
-      <obj_property name="ObjectShortName">buffer_en</obj_property>
-   </wvobject>
-   <wvobject fp_name="/logic_analyser_tb/uut/u_read_sync/min_off_time" type="other">
-      <obj_property name="ElementShortName">min_off_time</obj_property>
-      <obj_property name="ObjectShortName">min_off_time</obj_property>
-   </wvobject>
-   <wvobject fp_name="/logic_analyser_tb/uut/u_read_sync/counter" type="other">
-      <obj_property name="ElementShortName">counter</obj_property>
-      <obj_property name="ObjectShortName">counter</obj_property>
-   </wvobject>
-   <wvobject fp_name="/logic_analyser_tb/fifo_remaining_data" type="other">
-      <obj_property name="ElementShortName">fifo_remaining_data</obj_property>
-      <obj_property name="ObjectShortName">fifo_remaining_data</obj_property>
-   </wvobject>
-   <wvobject fp_name="/logic_analyser_tb/fifo_total_data" type="other">
-      <obj_property name="ElementShortName">fifo_total_data</obj_property>
-      <obj_property name="ObjectShortName">fifo_total_data</obj_property>
    </wvobject>
 </wave_config>

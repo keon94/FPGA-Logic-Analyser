@@ -5,20 +5,21 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity logic_analyser is
     generic(   
-        n_of_inputs : integer := 2;
-        b_width : integer := 4;
-        fifo_mem_size : integer := 8   
+        n_of_inputs                 : integer := 2;    --Number of inputs we are sampling
+        b_width                     : integer := 4;    --Number of samples per input that the buffer can store. 
+                                                       --This number times n_of_inputs is the total data that a FIFO row will contain.
+        fifo_mem_size               : integer := 8     --Depth of the FIFO
     );
 
     Port ( 
-        rst : in std_logic;
-        clk : in std_logic;
-        usb_clk : in std_logic;
-        read_en : in std_logic;
-        data_in : in std_logic_vector(n_of_inputs-1 downto 0);
-        data_out : out std_logic_vector(b_width*n_of_inputs-1 downto 0);
-        fifo_total_data : out integer;
-        fifo_remaining_data : out integer range 0 to fifo_mem_size
+        rst                         : in std_logic;     --an asynchronous master reset signal ... clears all data in the entire circuit
+        clk                         : in std_logic;     --The FPGA sampling clock (determined by the control unit)
+        usb_clk                     : in std_logic;     --The USB clock -- independent 
+        read_en                     : in std_logic;     --The read enable signal supplied by the USB. The USB reads from a FIFO row when this is high and we are on the rising edge of the usb clock
+        data_in                     : in std_logic_vector(n_of_inputs-1 downto 0);  --a vector of data coming from external circuits - (1 bit per circuit-node)
+        data_out                    : out std_logic_vector(b_width*n_of_inputs-1 downto 0); --the vector contained in a FIFO row, given to the USB at every read. 
+                                                                                            --The format is: [ckt1_sample1 , cktN_sample1, ... , ckt1_sample2, ... cktN_sample2, ...]
+        fifo_remaining_data         : out integer range 0 to fifo_mem_size          --keeps track of the the total number of data remaining in the FIFO (to be read). Updated everytime a read/write to the FIFO happens
     );
 end logic_analyser;
 
@@ -37,7 +38,6 @@ component FIFO
         signal data_in              : in std_logic_vector(mem_width-1 downto 0);
         signal data_out             : out std_logic_vector(mem_width-1 downto 0);
         signal fifo_state           : out std_logic;
-        signal total_data_recvd     : out integer;
         signal num_of_data          : out integer range 0 to mem_size        
     );  
 end component;
@@ -58,7 +58,7 @@ component Input_Buffer
     );
 end component;
 
-component clk_generator
+component write_clk_generator
     generic(
         N : integer
     );
@@ -78,25 +78,27 @@ component read_synchroniser is
     );
 end component;
 
-constant clk_division_factor : integer := b_width;
-constant fifo_mem_width : integer := b_width*n_of_inputs;
-
-signal write_clk, fifo_state, read_en_to_fifo : std_logic;
-signal data_from_buffer : std_logic_vector(fifo_mem_width-1 downto 0);
-signal write_off_time : integer;
+constant clk_division_factor                    : integer := b_width;   --the factor by which we will need to slow the write clk to the FIFO. 
+                                                                        --this slow down is necessary because it takes b_width cycles for the buffer to fill up, at which point can writing to the FIFO occur.
+constant fifo_mem_width                         : integer := b_width*n_of_inputs; --the number of bits in the FIFO's width (row)
+signal write_clk, fifo_state, read_en_to_fifo   : std_logic;    --bunch of intermediate signals. refer to the elaborated schmatic for details.
+                                                                --Note: FIFO state is a feedback signal from the FIFO, indicating whether it is full. If it is, the logic analyser shall cease data-intake operations.
+signal data_from_buffer                         : std_logic_vector(fifo_mem_width-1 downto 0); --the data sent from the buffer to a FIFO row. The size is = to the total buffer size = FIFO width size
+signal write_off_time                           : integer;  --unneeded for now, provided that we don't make use of the read sunchroniser module
 
 begin
 
-u_read_sync: read_synchroniser port map
-            (
-                read_en => read_en,
-                fpga_clk => clk,
-                min_off_time => write_off_time,
-                read_en_out => read_en_to_fifo
-            );
+--Currently this accomplishes nothing, so ignore it.
+--u_read_sync: read_synchroniser port map
+--            (
+--                read_en => read_en,
+--                fpga_clk => clk,
+--                min_off_time => write_off_time,
+--                read_en_out => read_en_to_fifo
+--            );
             
-
-u_clk_gen: clk_generator generic map
+--Generates the write clock for the FIFO
+u_clk_gen: write_clk_generator generic map
             (
                 N => clk_division_factor
             )
@@ -106,7 +108,7 @@ u_clk_gen: clk_generator generic map
                 fifo_write_clk => write_clk,
                 off_time_factor => write_off_time              
             );
-
+--The intermediate buffer stage that prepares the data for a FIFO row
 u_buffer: input_buffer generic map
             (
                 num_of_inputs => n_of_inputs,
@@ -122,7 +124,7 @@ u_buffer: input_buffer generic map
                 data_out => data_from_buffer
             );
             
-
+--The FIFO itself
 u_fifo: FIFO generic map
             (
                 mem_size => fifo_mem_size, 
@@ -130,12 +132,11 @@ u_fifo: FIFO generic map
             ) port map(
                 fifo_write_clk => write_clk,
                 usb_read_clk => usb_clk,
-                read_en => read_en_to_fifo,
+                read_en => read_en,
                 rst => rst,
                 data_in => data_from_buffer,
                 data_out => data_out,
                 fifo_state => fifo_state,
-                total_data_recvd => fifo_total_data,
                 num_of_data => fifo_remaining_data
             );
 
