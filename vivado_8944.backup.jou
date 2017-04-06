@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Feb 14 14:47:57 2017
+# Process ID: 8944
+# Current directory: C:/Users/Keon/Dropbox/Senior_Design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1480 C:\Users\Keon\Dropbox\Senior_Design\Senior_Design.xpr
+# Log file: C:/Users/Keon/Dropbox/Senior_Design/vivado.log
+# Journal file: C:/Users/Keon/Dropbox/Senior_Design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.xpr
+synth_design -rtl -name rtl_1
+close [ open C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/Control_Unit.vhd w ]
+add_files C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/Control_Unit.vhd
+remove_files  C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/Control_Unit.vhd
+close [ open C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/control_unit.vhd w ]
+add_files C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/control_unit.vhd
+launch_simulation
+open_wave_config C:/Users/Keon/Dropbox/Senior_Design/FIFO_tb_behav.wcfg
+open_wave_config C:/Users/Keon/Dropbox/Senior_Design/LAnalyser_tb_behav.wcfg
+source logic_analyser_tb.tcl
+close_sim
+close_project
+open_project C:/Users/Keon/Dropbox/Senior_Design_Test/Senior_Design.xpr

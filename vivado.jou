@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Mar 16 12:01:18 2017
+# Process ID: 28604
+# Current directory: C:/Users/Jay/Dropbox/Senior_Design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19008 C:\Users\Jay\Dropbox\Senior_Design\Senior_Design.xpr
+# Log file: C:/Users/Jay/Dropbox/Senior_Design/vivado.log
+# Journal file: C:/Users/Jay/Dropbox/Senior_Design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.xpr
+synth_design -rtl -name rtl_1
