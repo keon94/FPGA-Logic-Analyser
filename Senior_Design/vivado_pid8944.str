@@ -1,0 +1,433 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+Process ID: 8944
+
+Current time: 	2/14/17 2:48:05 PM CST
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	F:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Keon
+User home directory: C:/Users/Keon
+User working directory: C:/Users/Keon/Dropbox/Senior_Design
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: F:/Xilinx/Vivado
+RDI data directory: F:/Xilinx/Vivado/2016.4/data
+RDI bin directory: F:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Keon/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Keon/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	224 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 417 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 57 MB (+57524kb) [00:00:02]
+// [Engine Memory]: 386 MB (+253372kb) [00:00:02]
+// aK:r (cd:JFrame): Older Project Version: addNotify
+// [Engine Memory]: 418 MB (+12822kb) [00:00:07]
+// HMemoryUtils.trashcanNow. Engine heap size: 418 MB. GUI used memory: 29 MB. Current time: 2/14/17 2:48:07 PM CST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aK:r)
+// Opening Vivado Project: C:\Users\Keon\Dropbox\Senior_Design\Senior_Design.xpr. Version: Vivado v2016.2 
+// bt:g (cd:JFrame):  Open Project : addNotify
+dismissDialog("Older Project Version"); // aK:r (cd:JFrame)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.xpr 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 505 MB (+69982kb) [00:00:08]
+// [Engine Memory]: 537 MB (+6630kb) [00:00:09]
+// Tcl Message: open_project C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Jay/Documents/Senior_Design' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [Project 1-230] Project 'Senior_Design.xpr' upgraded for this version of Vivado. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2016.4/data/ip'. 
+// Project name: Senior_Design; location: C:/Users/Keon/Dropbox/Senior_Design; part: xc7k70tfbv676-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 14); // u:K (t:D, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 17, false); // u:K (t:D, cd:JFrame)
+// y:aO (cd:JFrame): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // y:aO (cd:JFrame)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7k70tfbv676-1 Top: logic_analyser 
+// HMemoryUtils.trashcanNow. Engine heap size: 601 MB. GUI used memory: 35 MB. Current time: 2/14/17 2:48:22 PM CST
+// [Engine Memory]: 669 MB (+110490kb) [00:00:24]
+// TclEventType: ELABORATE_FINISH
+// [Engine Memory]: 838 MB (+142026kb) [00:00:29]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 895 MB. GUI used memory: 35 MB. Current time: 2/14/17 2:48:31 PM CST
+// [Engine Memory]: 895 MB (+15491kb) [00:00:30]
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 70 MB (+10891kb) [00:00:31]
+// [Engine Memory]: 984 MB (+47039kb) [00:00:31]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 78 MB (+4634kb) [00:00:32]
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 865.609 ; gain = 655.055 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'logic_analyser' [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:22] 
+// Tcl Message: 	Parameter n_of_inputs bound to: 4 - type: integer  	Parameter b_width bound to: 16 - type: integer  	Parameter fifo_mem_size bound to: 256 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'read_synchroniser' declared at 'C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/read_synchroniser.vhd:10' bound to instance 'u_read_sync' of component 'read_synchroniser' [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:84] INFO: [Synth 8-638] synthesizing module 'read_synchroniser' [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/read_synchroniser.vhd:19] INFO: [Synth 8-256] done synthesizing module 'read_synchroniser' (1#1) [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/read_synchroniser.vhd:19] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'clk_generator' declared at 'C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/clk_divider.vhd:6' bound to instance 'u_clk_gen' of component 'clk_generator' [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:93] INFO: [Synth 8-638] synthesizing module 'clk_generator' [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/clk_divider.vhd:17] 
+// Tcl Message: 	Parameter N bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'clk_generator' (2#1) [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/clk_divider.vhd:17] 
+// Tcl Message: 	Parameter num_of_inputs bound to: 4 - type: integer  	Parameter buffer_width bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'input_buffer' declared at 'C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:7' bound to instance 'u_buffer' of component 'Input_Buffer' [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:104] INFO: [Synth 8-638] synthesizing module 'input_buffer' [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:25] 
+// Tcl Message: 	Parameter num_of_inputs bound to: 4 - type: integer  	Parameter buffer_width bound to: 16 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'input_buffer' (3#1) [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:25] 
+// Tcl Message: 	Parameter mem_size bound to: 256 - type: integer  	Parameter mem_width bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'FIFO' declared at 'C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:5' bound to instance 'u_fifo' of component 'FIFO' [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:120] INFO: [Synth 8-638] synthesizing module 'FIFO' [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:20] 
+// Tcl Message: 	Parameter mem_size bound to: 256 - type: integer  	Parameter mem_width bound to: 64 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'FIFO' (4#1) [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:20] INFO: [Synth 8-256] done synthesizing module 'logic_analyser' (5#1) [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:22] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 910.156 ; gain = 699.602 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 910.156 ; gain = 699.602 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7k70tfbv676-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/Keon/Dropbox/Senior_Design/xem7001.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/Keon/Dropbox/Senior_Design/xem7001.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1247.906 ; gain = 1037.352 
+// Tcl Message: 18 Infos, 17 Warnings, 11 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1247.906 ; gain = 404.719 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// M:a (cd:JFrame): Critical Messages: addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Open Elaborated Design"); // bt:g (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cd:JFrame)
+// [GUI Memory]: 83 MB (+587kb) [00:01:54]
+// Elapsed time: 122 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, logic_analyser - Behavioral (logic_analyser.vhd)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, logic_analyser - Behavioral (logic_analyser.vhd)]", 1, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+// [GUI Memory]: 88 MB (+804kb) [00:02:48]
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, logic_analyser - Behavioral (logic_analyser.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, logic_analyser - Behavioral (logic_analyser.vhd)]", 1, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+// Elapsed time: 46 seconds
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (C:JPanel, b:g)
+// F:q (b:g): Create Source File: addNotify
+// [GUI Memory]: 94 MB (+2133kb) [00:03:53]
+// Elapsed time: 14 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Control_Unit"); // ak:JTextField (JPanel:JComponent, F:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, F:q)
+dismissDialog("Create Source File"); // F:q (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 64 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// Tcl Message: close [ open C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/Control_Unit.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/Control_Unit.vhd 
+// I:q (cd:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:q)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+dismissDialog("Define Module"); // I:q (cd:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Unit - Behavioral (Control_Unit.vhd)]", 6, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Unit - Behavioral (Control_Unit.vhd)]", 6, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// [GUI Memory]: 101 MB (+1821kb) [00:04:05]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Control_Unit - Behavioral (Control_Unit.vhd)]", 6, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// ar:g (cd:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ar:g)
+// TclEventType: DG_GRAPH_STALE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+dismissDialog("Remove Sources"); // ar:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/Control_Unit.vhd 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,029 MB. GUI used memory: 67 MB. Current time: 2/14/17 2:52:17 PM CST
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, logic_analyser - Behavioral (logic_analyser.vhd)]", 1, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (C:JPanel, b:g)
+// F:q (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "control_unit"); // ak:JTextField (JPanel:JComponent, F:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, F:q)
+// HOptionPane Warning: ''control_unit.vhd' already exists. Please enter another name. (Create Source File)'
+selectButton("PAResourceAtoD.CreateSrcFileDialog_FILE_WITH_SPECIFIED_NAME_ALREADY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, F:q)
+dismissDialog("Create Source File"); // F:q (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 24 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// Tcl Message: close [ open C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/control_unit.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/control_unit.vhd 
+// I:q (cd:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:q)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+dismissDialog("Define Module"); // I:q (cd:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 79 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, control_unit - Behavioral (control_unit.vhd)]", 6, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, control_unit - Behavioral (control_unit.vhd)]", 6, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// [GUI Memory]: 106 MB (+428kb) [00:06:06]
+// Elapsed time: 109 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 23, true); // u:K (t:D, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 23, true); // u:K (t:D, cd:JFrame) - Node
+// [GUI Memory]: 113 MB (+1178kb) [00:08:09]
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 23, true, false, false, false, true, false); // u:K (t:D, cd:JFrame) - Popup Trigger - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 23); // u:K (t:D, cd:JFrame)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 23); // u:K (t:D, cd:JFrame)
+// [Engine Memory]: 1,035 MB (+1180kb) [00:08:11]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 23, true, false, false, false, true, false); // u:K (t:D, cd:JFrame) - Popup Trigger - Node
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Implementation Settings]", 24, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_IMPL_SETTINGS
+// Project Settings: addNotify
+// [GUI Memory]: 119 MB (+158kb) [00:10:17]
+// [GUI Memory]: 125 MB (+246kb) [00:26:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,044 MB. GUI used memory: 74 MB. Current time: 2/14/17 3:22:18 PM CST
+// Elapsed time: 2254 seconds
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,044 MB. GUI used memory: 73 MB. Current time: 2/14/17 3:52:18 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 67 MB. Current time: 2/14/17 5:27:50 PM CST
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,048 MB. GUI used memory: 64 MB. Current time: 2/14/17 5:57:50 PM CST
+// Elapsed time: 9480 seconds
+selectCodeEditor("control_unit.vhd", 329, 148); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 9, true); // u:K (t:D, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 9, true); // u:K (t:D, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'logic_analyser_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "logic_analyser_tb_behav -key {Behavioral:sim_1:Functional:logic_analyser_tb} -tclbatch {logic_analyser_tb.tcl} -view {C:/Users/Keon/Dropbox/Senior_Design/FIFO_tb_behav.wcfg} -view {C:/Users/Keon/Dropbox/Senior_Design/LAnalyser_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/Users/Keon/Dropbox/Senior_Design/FIFO_tb_behav.wcfg 
+// Tcl Message: open_wave_config C:/Users/Keon/Dropbox/Senior_Design/LAnalyser_tb_behav.wcfg 
+// Tcl Message: source logic_analyser_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 10us 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'logic_analyser_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 10us 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1311.301 ; gain = 45.633 
+// 'd' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 71 MB. Current time: 2/14/17 6:12:41 PM CST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 101, 151, false, false, false, true, false); // l:a (JViewport:JComponent, cd:JFrame) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 71 MB. Current time: 2/14/17 6:12:44 PM CST
+selectMenuItem((HResource) null, "Full View"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 73 MB. Current time: 2/14/17 6:12:49 PM CST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 72 MB. Current time: 2/14/17 6:12:53 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 19 seconds
+closeMainWindow("Senior_Design - [C:/Users/Keon/Dropbox/Senior_Design/Senior_Design.xpr] - Vivado 2016.4"); // cd:JFrame
+// y:aO (cd:JFrame): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, y:aO)
+dismissDialog("Exit Vivado"); // y:aO (cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open Project..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("C:/Users/Keon/Dropbox/Senior_Design_Test/Senior_Design.xpr");
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// 'i' command handler elapsed time: 10 seconds
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 66 MB. Current time: 2/14/17 6:13:21 PM CST
+// Engine heap size: 1,084 MB. GUI used memory: 79 MB. Current time: 2/14/17 6:13:21 PM CST
+// TclEventType: DESIGN_CLOSE
+// Opening Vivado Project: C:/Users/Keon/Dropbox/Senior_Design_Test/Senior_Design.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Tcl Message: close_project 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Keon/Dropbox/Senior_Design_Test/Senior_Design.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Keon/Dropbox/Senior_Design' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2016.4/data/ip'. 
+// Project name: Senior_Design; location: C:/Users/Keon/Dropbox/Senior_Design_Test; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 48 MB. Current time: 2/14/17 6:43:21 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 45 MB. Current time: 2/14/17 7:13:21 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/14/17 7:43:22 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/14/17 8:13:23 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/14/17 8:43:24 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/14/17 9:13:25 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/14/17 9:43:26 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 12:21:20 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 12:51:20 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 6:35:21 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 42 MB. Current time: 2/15/17 7:05:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 7:35:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 8:05:13 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 8:35:13 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 9:05:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 9:35:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 10:05:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 10:35:15 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 11:05:15 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/15/17 11:35:15 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/16/17 12:05:16 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/16/17 12:35:16 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/16/17 1:05:16 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/16/17 1:35:17 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/16/17 2:05:17 AM CST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 40 MB. Current time: 2/16/17 4:44:57 PM CST
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 41 MB. Current time: 2/16/17 5:14:57 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,084 MB. GUI used memory: 30 MB. Current time: 2/16/17 5:44:57 PM CST

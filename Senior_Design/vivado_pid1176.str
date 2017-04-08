@@ -1,0 +1,242 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+Process ID: 1176
+
+Current time: 	4/8/17 1:15:09 PM CDT
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	F:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Keon
+User home directory: C:/Users/Keon
+User working directory: C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: F:/Xilinx/Vivado
+RDI data directory: F:/Xilinx/Vivado/2016.4/data
+RDI bin directory: F:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Keon/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Keon/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	197 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 530 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 57 MB (+57231kb) [00:00:02]
+// [Engine Memory]: 389 MB (+256190kb) [00:00:02]
+// Opening Vivado Project: C:\Users\Keon\Dropbox\Senior_Design_3\Senior_Design\Senior_Design.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.xpr 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 71 MB (+11440kb) [00:00:03]
+// [Engine Memory]: 478 MB (+72635kb) [00:00:03]
+// [Engine Memory]: 518 MB (+16975kb) [00:00:04]
+// Tcl Message: open_project C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Jay/Dropbox/Senior_Design' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2016.4/data/ip'. 
+// Project name: Senior_Design; location: C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design; part: xc7k70tfbv676-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 530 MB. GUI used memory: 34 MB. Current time: 4/8/17 1:15:11 PM CDT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'logic_analyser_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.sim/sim_1/behav' 
+// Tcl Message:  ****** Webtalk v2016.4 (64-bit)   **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016   **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.sim/sim_1/behav/xsim.dir/logic_analyser_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-186] 'C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.sim/sim_1/behav/xsim.dir/logic_analyser_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Apr 08 13:15:41 2017. For additional details about this file, please refer to the WebTalk help file at F:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 51.121 ; gain = 0.059 INFO: [Common 17-206] Exiting Webtalk at Sat Apr 08 13:15:41 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 812.121 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "logic_analyser_tb_behav -key {Behavioral:sim_1:Functional:logic_analyser_tb} -tclbatch {logic_analyser_tb.tcl} -view {C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/FIFO_tb_behav.wcfg} -view {C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/LAnalyser_tb_behav.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 545 MB (+1913kb) [00:00:39]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: open_wave_config C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/FIFO_tb_behav.wcfg 
+// Tcl Message: open_wave_config C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/LAnalyser_tb_behav.wcfg 
+// Tcl Message: source logic_analyser_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 10us 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'logic_analyser_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 10us 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 812.121 ; gain = 0.000 
+// 'd' command handler elapsed time: 28 seconds
+// Elapsed time: 28 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 554 MB. GUI used memory: 41 MB. Current time: 4/8/17 1:15:49 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 555 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:15:50 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 557 MB. GUI used memory: 43 MB. Current time: 4/8/17 1:15:50 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 557 MB. GUI used memory: 43 MB. Current time: 4/8/17 1:15:50 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 557 MB. GUI used memory: 41 MB. Current time: 4/8/17 1:15:50 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 557 MB. GUI used memory: 43 MB. Current time: 4/8/17 1:15:50 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 557 MB. GUI used memory: 46 MB. Current time: 4/8/17 1:15:50 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 557 MB. GUI used memory: 45 MB. Current time: 4/8/17 1:15:50 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:15:51 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 42 MB. Current time: 4/8/17 1:16:01 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:16:01 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 43 MB. Current time: 4/8/17 1:16:01 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 44 MB. Current time: 4/8/17 1:16:02 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 43 MB. Current time: 4/8/17 1:16:02 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 43 MB. Current time: 4/8/17 1:16:02 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:16:03 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 43 MB. Current time: 4/8/17 1:16:03 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:16:05 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 43 MB. Current time: 4/8/17 1:16:06 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 43 MB. Current time: 4/8/17 1:16:06 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:16:06 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:16:06 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 46 MB. Current time: 4/8/17 1:16:06 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:16:06 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 41 MB. Current time: 4/8/17 1:16:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 46 MB. Current time: 4/8/17 1:16:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 41 MB. Current time: 4/8/17 1:16:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:16:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 45 MB. Current time: 4/8/17 1:16:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 48 MB. Current time: 4/8/17 1:16:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 48 MB. Current time: 4/8/17 1:16:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 48 MB. Current time: 4/8/17 1:16:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 45 MB. Current time: 4/8/17 1:16:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 46 MB. Current time: 4/8/17 1:16:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 48 MB. Current time: 4/8/17 1:16:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 48 MB. Current time: 4/8/17 1:16:10 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 560 MB. GUI used memory: 48 MB. Current time: 4/8/17 1:16:10 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 560 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:16:10 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 560 MB. GUI used memory: 46 MB. Current time: 4/8/17 1:16:10 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 561 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:16:10 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 74 MB (+33kb) [00:04:26]
+// [GUI Memory]: 78 MB (+393kb) [00:04:56]
+// [GUI Memory]: 83 MB (+187kb) [00:05:21]
+// [GUI Memory]: 87 MB (+448kb) [00:10:41]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 41 MB. Current time: 4/8/17 1:33:06 PM CDT
+// [Engine Memory]: 581 MB (+8770kb) [00:18:04]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 40 MB. Current time: 4/8/17 1:35:34 PM CDT
+// [GUI Memory]: 92 MB (+384kb) [00:27:57]

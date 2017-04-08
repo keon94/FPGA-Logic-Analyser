@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Apr 08 02:34:50 2017
+# Process ID: 5964
+# Current directory: C:/Users/Keon/Dropbox/Senior_Design_3/Logic_Analyser_Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3724 C:\Users\Keon\Dropbox\Senior_Design_3\Logic_Analyser_Vivado\Senior_Design.xpr
+# Log file: C:/Users/Keon/Dropbox/Senior_Design_3/Logic_Analyser_Vivado/vivado.log
+# Journal file: C:/Users/Keon/Dropbox/Senior_Design_3/Logic_Analyser_Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Keon/Dropbox/Senior_Design_3/Logic_Analyser_Vivado/Senior_Design.xpr

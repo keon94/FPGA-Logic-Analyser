@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri Apr 07 13:13:54 2017
+# Process ID: 5256
+# Current directory: C:/Users/Jay/Dropbox/Senior_Design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12416 C:\Users\Jay\Dropbox\Senior_Design\Senior_Design.xpr
+# Log file: C:/Users/Jay/Dropbox/Senior_Design/vivado.log
+# Journal file: C:/Users/Jay/Dropbox/Senior_Design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.xpr
+remove_files  C:/Users/Jay/Dropbox/Senior_Design/Senior_Design.srcs/sources_1/new/clk_divider.vhd
+save_project_as Senior_Design_Test_3 C:/Users/Jay/Dropbox/Senior_Design_Test_3 -force
+add_files -norecurse {C:/Users/Jay/Dropbox/Senior_Design_Test_3/Senior_Design_Test_3.srcs/sources_1/new/clk_divider.vhd C:/Users/Jay/Dropbox/Senior_Design_Test_3/Senior_Design_Test_3.srcs/sources_1/new/InputGen.vhd}

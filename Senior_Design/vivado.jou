@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Apr 08 13:15:01 2017
+# Process ID: 1176
+# Current directory: C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent548 C:\Users\Keon\Dropbox\Senior_Design_3\Senior_Design\Senior_Design.xpr
+# Log file: C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/vivado.log
+# Journal file: C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.xpr
+launch_simulation
+open_wave_config C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/FIFO_tb_behav.wcfg
+open_wave_config C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/LAnalyser_tb_behav.wcfg
+source logic_analyser_tb.tcl
