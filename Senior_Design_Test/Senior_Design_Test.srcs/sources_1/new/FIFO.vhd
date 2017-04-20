@@ -34,7 +34,7 @@ architecture Behavioral of FIFO is
 type fifo_mem_type is array(0 to mem_size-1) of std_logic_vector(mem_width-1 downto 0);
 
 signal zero_data                                            : std_logic_vector(mem_width-1 downto 0) := (others => '0'); --a zero FIFO row
-signal write_address, read_address                          : integer range 0 to mem_size-1 := 0;   --address pointers for the FIFO
+signal write_address, read_address                          : integer range 0 to mem_size-1 := mem_size-1;   --address pointers for the FIFO
 signal fifo_mem                                             : fifo_mem_type := (others => zero_data);   --the fifo iteself (an array of vectors)
 signal master_write_controller, master_read_controller      : std_logic := '1'; --these signals become 0 once the FIFO terminates data-writes to itself and usb-reads from itself respectively
 signal effective_write_clk, effective_read_en               : std_logic; --same as write_clk and read_en, except that they are overridden by the declared master signals once they become 0
