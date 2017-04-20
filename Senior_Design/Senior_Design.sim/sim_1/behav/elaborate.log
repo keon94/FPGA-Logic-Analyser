@@ -4,7 +4,7 @@ Running: F:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 61dc3ce03d
 Using 2 slave threads.
 Starting static elaboration
 WARNING: [VRFC 10-1625] value in initialization depends on signal zero_buffer [C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:36]
-WARNING: [VRFC 10-1625] value in initialization depends on signal zero_data [C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:38]
+WARNING: [VRFC 10-1625] value in initialization depends on signal zero_data [C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:39]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

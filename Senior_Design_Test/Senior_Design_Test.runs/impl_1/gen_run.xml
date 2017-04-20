@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchTime="1480186581">
   <File Type="ROUTE-STATUS-PB" Name="FIFO_route_status.pb"/>
-  <File Type="PWROPT-DRC" Name="FIFO_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="FIFO_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="FIFO_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="FIFO_power_routed.rpx"/>
   <File Type="PA-TCL" Name="FIFO.tcl"/>
+  <File Type="INIT-TIMING" Name="FIFO_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="FIFO_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="FIFO_drc_pwropted.rpt"/>
   <File Type="OPT-DCP" Name="FIFO_opt.dcp"/>
   <File Type="RDI-RDI" Name="FIFO.vdi"/>
   <File Type="OPT-DRC" Name="FIFO_drc_opted.rpt"/>
@@ -31,10 +31,10 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="FIFO_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="FIFO_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="FIFO_drc_routed.pb"/>
-  <File Type="BG-DRC" Name="FIFO.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="FIFO_methodology_drc_routed.rpt"/>
-  <File Type="BG-BGN" Name="FIFO.bgn"/>
+  <File Type="BG-DRC" Name="FIFO.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="FIFO_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="FIFO.bgn"/>
   <File Type="BG-BIT" Name="FIFO.bit"/>
   <File Type="ROUTE-PWR" Name="FIFO_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="FIFO_power_summary_routed.pb"/>

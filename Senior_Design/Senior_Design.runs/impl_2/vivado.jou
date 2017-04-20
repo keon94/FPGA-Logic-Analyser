@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Apr 18 14:45:42 2017
+# Process ID: 772
+# Current directory: C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.runs/impl_2
+# Command line: vivado.exe -log logic_analyser.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source logic_analyser.tcl -notrace
+# Log file: C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.runs/impl_2/logic_analyser.vdi
+# Journal file: C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source logic_analyser.tcl -notrace

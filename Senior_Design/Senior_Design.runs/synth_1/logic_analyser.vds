@@ -1,0 +1,333 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Apr 18 14:45:15 2017
+# Process ID: 2616
+# Current directory: C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.runs/synth_1
+# Command line: vivado.exe -log logic_analyser.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source logic_analyser.tcl
+# Log file: C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.runs/synth_1/logic_analyser.vds
+# Journal file: C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source logic_analyser.tcl -notrace
+Command: synth_design -top logic_analyser -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9496 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 322.605 ; gain = 112.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'logic_analyser' [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:26]
+	Parameter n_of_inputs bound to: 2 - type: integer 
+	Parameter b_width bound to: 4 - type: integer 
+	Parameter fifo_mem_size bound to: 8 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'write_clk_generator' declared at 'C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO_write_clk_generator.vhd:8' bound to instance 'u_clk_gen' of component 'write_clk_generator' [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'write_clk_generator' [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO_write_clk_generator.vhd:19]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'write_clk_generator' (1#1) [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO_write_clk_generator.vhd:19]
+WARNING: [Synth 8-549] port width mismatch for port 'off_time_factor': port width = 5, actual width = 32 [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:68]
+	Parameter num_of_inputs bound to: 2 - type: integer 
+	Parameter buffer_width bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'input_buffer' declared at 'C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:13' bound to instance 'u_buffer' of component 'Input_Buffer' [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'input_buffer' [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:31]
+	Parameter num_of_inputs bound to: 2 - type: integer 
+	Parameter buffer_width bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'buffer_en' is read in the process but is not in the sensitivity list [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:44]
+WARNING: [Synth 8-614] signal 'zero_buffer' is read in the process but is not in the sensitivity list [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:44]
+WARNING: [Synth 8-614] signal 'buffer_en' is read in the process but is not in the sensitivity list [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'input_buffer' (2#1) [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/input_buffer.vhd:31]
+	Parameter mem_size bound to: 8 - type: integer 
+	Parameter mem_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FIFO' declared at 'C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:14' bound to instance 'u_fifo' of component 'FIFO' [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'FIFO' [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:31]
+	Parameter mem_size bound to: 8 - type: integer 
+	Parameter mem_width bound to: 8 - type: integer 
+WARNING: [Synth 8-614] signal 'zero_data' is read in the process but is not in the sensitivity list [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:53]
+WARNING: [Synth 8-614] signal 'fifo_mem' is read in the process but is not in the sensitivity list [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:64]
+WARNING: [Synth 8-614] signal 'effective_read_en' is read in the process but is not in the sensitivity list [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'FIFO' (3#1) [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/FIFO.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'logic_analyser' (4#1) [C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.srcs/sources_1/new/logic_analyser.vhd:26]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 359.867 ; gain = 150.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 359.867 ; gain = 150.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 359.867 ; gain = 150.078
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-5545] ROM "clk_by_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "buffer_memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "buffer_memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "buffer_memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "buffer_memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "fifo_mem_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_mem_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_mem_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_mem_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_mem_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_mem_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_mem_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_mem_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 395.121 ; gain = 185.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module write_clk_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module input_buffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module FIFO 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "u_clk_gen/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk_gen/clk_by_N" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_buffer/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_buffer/buffer_memory_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_buffer/buffer_memory_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_buffer/buffer_memory_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_buffer/buffer_memory_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 499.953 ; gain = 290.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 499.953 ; gain = 290.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 500.492 ; gain = 290.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 500.492 ; gain = 290.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 500.492 ; gain = 290.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 500.492 ; gain = 290.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 500.492 ; gain = 290.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 500.492 ; gain = 290.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 500.492 ; gain = 290.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    16|
+|3     |LUT1   |    69|
+|4     |LUT2   |     9|
+|5     |LUT3   |    15|
+|6     |LUT4   |    24|
+|7     |LUT5   |    11|
+|8     |LUT6   |    52|
+|9     |FDCE   |   127|
+|10    |FDPE   |     2|
+|11    |FDRE   |    33|
+|12    |IBUF   |     6|
+|13    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+--------------------+------+
+|      |Instance    |Module              |Cells |
++------+------------+--------------------+------+
+|1     |top         |                    |   379|
+|2     |  u_buffer  |input_buffer        |   135|
+|3     |  u_clk_gen |write_clk_generator |    82|
+|4     |  u_fifo    |FIFO                |   141|
++------+------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 500.492 ; gain = 290.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 500.492 ; gain = 252.895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 500.492 ; gain = 290.703
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 569.781 ; gain = 330.098
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jay/Dropbox/Senior_Design_3/Senior_Design/Senior_Design.runs/synth_1/logic_analyser.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 569.781 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 18 14:45:35 2017...

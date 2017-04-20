@@ -62,7 +62,7 @@ begin
         if(buffer_en = '1') then
             if(rst = '1') then
                 data_out_temp <= (others => '0');
-            elsif(rising_edge(fifo_write_clk)) then   --send the whole content of the buffer to the fifo. The format is [ckt1_sample1 , cktN_sample1, ... , ckt1_sample2, ... cktN_sample2, ...]
+            elsif(falling_edge(fifo_write_clk)) then   --send the whole content of the buffer to the fifo. The format is [ckt1_sample1 , cktN_sample1, ... , ckt1_sample2, ... cktN_sample2, ...]
                 for i in 0 to buffer_width-1 loop
                     data_out_temp(num_of_inputs*(i+1)-1 downto num_of_inputs*i) <= buffer_memory(i);
                 end loop;
