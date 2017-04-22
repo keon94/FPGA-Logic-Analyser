@@ -1,0 +1,11 @@
+0.6
+2016.4
+Dec 14 2016
+22:58:16
+C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design_Built_In_FIFO/Senior_Design_Built_In_FIFO.sim/sim_1/behav/glbl.v,1481753704,verilog,,,,glbl,,,,,,,,
+C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design_Built_In_FIFO/Senior_Design_Built_In_FIFO.srcs/sim_1/new/logic_analyser_tb.vhd,1492840063,vhdl,,,,logic_analyser_tb,,,,,,,,
+C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design_Built_In_FIFO/Senior_Design_Built_In_FIFO.srcs/sources_1/ip/bram_fifo_1/sim/bram_fifo.v,1492839375,verilog,,,,bram_fifo,,,,,,,,
+C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design_Built_In_FIFO/Senior_Design_Built_In_FIFO.srcs/sources_1/new/FIFO.vhd,1492839425,vhdl,,,,fifo,,,,,,,,
+C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design_Built_In_FIFO/Senior_Design_Built_In_FIFO.srcs/sources_1/new/FIFO_write_clk_generator.vhd,1492841293,vhdl,,,,write_clk_generator,,,,,,,,
+C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design_Built_In_FIFO/Senior_Design_Built_In_FIFO.srcs/sources_1/new/input_buffer.vhd,1492544552,vhdl,,,,input_buffer,,,,,,,,
+C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design_Built_In_FIFO/Senior_Design_Built_In_FIFO.srcs/sources_1/new/logic_analyser.vhd,1492841403,vhdl,,,,logic_analyser,,,,,,,,

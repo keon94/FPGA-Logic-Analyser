@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Apr 22 00:36:15 2017
+# Process ID: 2164
+# Current directory: C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design_Built_In_FIFO/Senior_Design_Built_In_FIFO.runs/bram_fifo_synth_1
+# Command line: vivado.exe -log bram_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bram_fifo.tcl
+# Log file: C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design_Built_In_FIFO/Senior_Design_Built_In_FIFO.runs/bram_fifo_synth_1/bram_fifo.vds
+# Journal file: C:/Users/Keon/Dropbox/Senior_Design_3/Senior_Design_Built_In_FIFO/Senior_Design_Built_In_FIFO.runs/bram_fifo_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bram_fifo.tcl -notrace
